@@ -1,0 +1,31 @@
+program aritmatika;
+uses  crt;
+
+var
+a: integer;
+b : integer;
+hasilfx : integer;
+hasilfxy: integer;
+
+function fx (x : integer): integer;
+begin
+fx:=x*x + 4*x - 5;
+end;
+
+function fxy (x, y : integer): integer;
+begin
+fxy:=x*x + 2*x*y + y*y;
+end;
+
+begin
+clrscr;
+write('Nilai X = ');readln(a);
+write('Nilai Y = ');readln(b);
+
+hasilfx := fx(a);
+hasilfxy := fxy(a,b);
+writeln('FX = ',hasilfx);
+writeln('FXY = ',hasilfxy);
+
+readln;
+end.
